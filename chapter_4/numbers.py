@@ -33,4 +33,21 @@ print("\n")
 # 4.8
 cubes = []
 for number in range(1, 11):
-  number
+  cube = number**3
+  cubes.append(cube)
+
+for cube in cubes:
+  print(cube)
+print("\n")
+
+# 4.9
+cubes = [number**3 for number in range(1,11)]
+for cube in cubes:
+  print(cube)
+print("\n")
+
+# 4.10
+threes = list(range(3, 31, 3))
+print(f"The first three numbers in the slice are: {threes[0:3]}")
+print(f"The middle three numbers in the slice are: {threes[4:7]}")
+print(f"The last three numbers in the slice are: {threes[7:]}")
